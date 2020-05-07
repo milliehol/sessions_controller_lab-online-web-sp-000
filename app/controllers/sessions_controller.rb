@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
         session[:username] = params[:username]
         redirect_to '/'
         
-         params[:username] == nil
+         if !params[:name] || params[:name].empty?
         redirect_to '/'
     end
 end
