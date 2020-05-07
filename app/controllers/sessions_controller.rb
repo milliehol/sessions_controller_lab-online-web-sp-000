@@ -3,8 +3,8 @@ class SessionsController < ApplicationController
   end
   
   def destroy
-  session.delete :username
-  session.clear :username
+  session.delete :name
+  redirect_to '/'
   end
   
    def create
