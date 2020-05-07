@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   
   def destroy
   session.delete :username
-  session.delete :username
+  session.clear :username
   end
   
    def create
